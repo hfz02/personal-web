@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+    div {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+    }
+    .one {
+        background-color: rgb(252, 127, 44);
+        z-index: 1;
+    }
+    .two {
+        background-color: rgb(0, 245, 0);
+        top: 100px;
+        left: 100px;
+        /* z-index: 1; */
+    }
+    .three {
+        background-color: rgb(75, 183, 255);
+        top: 200px;
+        left: 200px;
+        /* z-index: 1; */
+    }
+    .four {
+        background-color: rgb(229, 255, 0);
+        top: 300px;
+        left: 300px;
+        /* z-index: 1; */
+    }
+
+    .footer {
+        display: flex;
+        background-color: #0c344d;
+        color: white;
+        width: 100%;
+        height: 200px;
+    }
+
+    .footer > .row > ul {
+        margin-top: 30px;
+        margin-left: 250px;
+        display: flex;
+        list-style-type: none;
+    }
+
+    .footer > .row > ul > li > img {
+        width: 41px;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+
+    .footer > .row > ul > li > p {
+        /* border: 1px solid #fff; */
+        margin-left: 450px;
+        margin-top: 10px;
+        width: 30%;
+        font-size: 20px;
+    }
+
+</style>
+
+<body>
+    <!-- <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div> -->
+
+    <div class="footer">
+        <div class="row">
+            <ul>
+                <li><img src="img/github.svg" alt="" id="github"></li>
+                <li><img src="img/linkedin.svg" alt="" id="linkedin"></li>
+                <li><img src="img/instagram.svg" alt="" id="instagram"></li>
+                <li><p>copyright 2022 hafizh</p></li>
+            </ul>
+        </div>
+    </div>
+            
+       
+    <script>
+        document.getElementById("github").addEventListener("click", function() {
+            window.open('https://github.com/hfz02')
+        })
+        document.getElementById("linkedin").addEventListener("click", function() {
+            window.open('https://www.linkedin.com/in/01-muhammad-hafizh')
+        })
+        document.getElementById("instagram").addEventListener("click", function() {
+            window.open('https://www.instagram.com/_mhhhhh/')
+        })
+    </script>
+</body>
+</html>
