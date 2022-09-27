@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-    <style>
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <title>Muhammad Hafizh | Personal Website</title>
 </head>
 <body>
-    <header id="navbar">
-        <div>
-            <ul class="list">
-                <li class="item"><a style="color: #fff;" href="#home">HOME</a></li>
-                <li class="item"><a style="color: #fff;" href="#about-me">ABOUT</a></li>
-                <li class="item"><a style="color: #fff;" href="#project">PROJECT</a></li>
-            </ul>
+    <!-- Navbar -->
+    <div class="navbar" id="navbar">
+        <div class="container flex">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about-me">ABOUT</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
-    <!-- <img src="img/vector-1.svg" alt=""> -->
+    </div>
 
+    <!-- Hero -->
     <div class="hero" id="home">
-        <div class="row">
-            <div class="left">
-                <div class="img">
-                    <div class="me"></div>
-                </div>
+        <div class="container grid">
+            <div class="hero-left">
+                <div class="me"></div>
             </div>
-            <div class="right">
-                <h1>Halo! Saya Hafizh</h1>
-                <h2>Seorang Junior <span style="color: #41D3BD; font-weight: 1000;">Front-End</span> Developer dan memiliki minat di dunia <span style="color: #41D3BD; font-weight: 1000;">UI/UX</span> Design.</h2>
+            <div class="hero-right">
+                <h1>Halo! Saya <span style="color: #41D3BD;">Hafizh</span></h1>
+                <p>Seorang Junior <span style="color: #41D3BD; font-weight: 1000;">Front-End</span> Developer dan memiliki minat di dunia <span style="color: #41D3BD; font-weight: 1000;">UI/UX</span> Design.</p>
                 <button>
                     <a style="color: #041E2A;" href="doc/text.txt" download rel="noopener noreferrer" target="_blank">
                         Download CV
@@ -43,15 +40,16 @@
         </div>
     </div>
     
+    <!-- About me -->
     <div class="about-me" id="about-me">
-        <div class="row">
-            <div class="row-1">
-                <h1>About Me</h1>
+        <div class="container grid">
+            <div class="row-1 text-center">
+                <h2 class="lg">About Me</h2>
             </div>
-            <div class="row-2">
-                <h2>
+            <div class="paragraph">
+                <h3>
                     Perkenalkan nama saya Muhammad Hafizh, seorang Junior Front-End Developer. 
-                    Saya mulai belajar Web Programming sejak Januari 2022.
+                    Saya mulai belajar Web Programming sejak Januari 3022.
                     <br>
                     <br>
                     Pertama kali saya mengenal HTML dan CSS. Saya suka mengulik-ngulik keduanya tanpa framework CSS
@@ -64,17 +62,25 @@
                     Saya telah membuat project sederhana yakni Live Search API menggunakan ReactJS. 
                     Teman-teman bisa melihatnya di laman bagian Project.
                     Untuk kedepannya saya akan membuat project-project yang lebih menarik lagi.
-                </h2>
+                </h3>
             </div>
-            <div class="row-3">
-                <div class="logo">
-                    <ul>
-                        <li><img src="img/html.svg" alt="" class="html"></li>
-                        <li><img src="img/css.svg" alt="" class="css"></li>
-                        <li><img src="img/javascript.svg" alt="" class="js"></li>
-                        <li><img src="img/reactjs.svg" alt="" class="reactjs"></li>
-                        <li><img src="img/figma.svg" alt="" class="figma"></li>
-                    </ul>
+            <div class="languages">
+                <div class="container flex">
+                    <div class="card">
+                        <img src="img/html.svg" alt="" class="html">
+                    </div>
+                    <div class="card" >
+                        <img src="img/css.svg" alt="" class="css">
+                    </div>
+                    <div class="card">
+                        <img src="img/javascript.svg" alt="" class="js">
+                    </div>
+                    <div class="card">
+                        <img src="img/reactjs.svg" alt="" class="reactjs">
+                    </div>
+                    <div class="card">
+                        <img src="img/figma.svg" alt="" class="figma">
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,8 +89,8 @@
 
     <div class="project" id="project">
         <div class="row">
-            <div class="row-1">
-                <h3>Project</h3>
+            <div class="row-1 text-center">
+                <h2 class="lg">Project</h2>
             </div>
             <div class="row-2">
                 <div class="card"></div>
@@ -95,14 +101,20 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="row">
-            <ul>
-                <li><img src="img/github.svg" alt="" id="github"></li>
-                <li><img src="img/linkedin.svg" alt="" id="linkedin"></li>
-                <li><img src="img/instagram.svg" alt="" id="instagram"></li>
-                <li><p>copyright 2022 hafizh</p></li>
-            </ul>
+    <footer class="footer">
+        <div class="container grid grid-2">
+            <div>
+                <h1>Muhammad Hafizh</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <nav>
+                <div class="social">
+                    <a href="https://github.com/hfz02"><img src="img/github.svg" alt="" id="github"></a>
+                    <a href="https://www.linkedin.com/in/01-muhammad-hafizh"><img src="img/linkedin.svg" alt="" id="linkedin"></a>
+                    <a href="https://www.instagram.com/_mhhhhh/"><img src="img/instagram.svg" alt="" id="instagram"></a>
+                </div>
+                </ul>
+            </nav>
         </div>
     </div>
 
@@ -110,22 +122,22 @@
         window.onscroll = () => scrollFunction()
         
         function scrollFunction() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
             document.getElementById("navbar").style.boxShadow = "0 5px 5px 1px #020"
             } else {
             document.getElementById("navbar").style.boxShadow = 'none'
             }
         }
 
-        document.getElementById("github").addEventListener("click", function() {
-            window.open('https://github.com/hfz02')
-        })
-        document.getElementById("linkedin").addEventListener("click", function() {
-            window.open('https://www.linkedin.com/in/01-muhammad-hafizh')
-        })
-        document.getElementById("instagram").addEventListener("click", function() {
-            window.open('https://www.instagram.com/_mhhhhh/')
-        })
+        // document.getElementById("github").addEventListener("click", function() {
+        //     window.open('https://github.com/hfz02')
+        // })
+        // document.getElementById("linkedin").addEventListener("click", function() {
+        //     window.open('https://www.linkedin.com/in/01-muhammad-hafizh')
+        // })
+        // document.getElementById("instagram").addEventListener("click", function() {
+        //     window.open('https://www.instagram.com/_mhhhhh/')
+        // })
     </script>
 
 </body>
