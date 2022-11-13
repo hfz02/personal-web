@@ -5,126 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Muhammad Hafizh | Personal Website</title>
 </head>
 <body>
+    
     <!-- Navbar -->
-    <div class="navbar" id="navbar">
+    <div class="navbar" >
         <div class="container flex">
-            <nav>
+            <nav id="navbar">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about-me">ABOUT</a></li>
-                    <li><a href="#project">PROJECT</a></li>
-                    <!-- <li><a href="landing.html">LANDING</a></li> -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#project">Project</a></li>
                 </ul>
             </nav>
         </div>
     </div>
 
-    <!-- Hero -->
-    <div class="hero" id="home">
-        <div class="container grid">
-            <div class="hero-left">
-                <div class="me"></div>
-            </div>
-            <div class="hero-right">
-                <h1>Halo! Saya <span style="color: #41D3BD;">Hafizh</span></h1>
-                <p>Seorang Junior <span style="color: #41D3BD; font-weight: 1000;">Front-End</span> Developer dan memiliki minat di dunia <span style="color: #41D3BD; font-weight: 1000;">UI/UX</span> Design.</p>
-                <button>
-                    <a style="color: #041E2A;" href="doc/Resume.pdf" download rel="noopener noreferrer" target="_blank">
-                        Download CV
-                    </a>
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- About me -->
-    <div class="about-me" id="about-me">
-        <div class="container grid">
-            <div class="row-1 text-center">
-                <h2 class="lg">About Me</h2>
-            </div>
-            <div class="paragraph">
-                <h3>
-                    Perkenalkan nama saya Muhammad Hafizh, seorang Junior Front-End Developer. 
-                    Saya mulai belajar Web Programming sejak Januari 2022.
-                    <br>
-                    <br>
-                    Pertama kali saya mengenal HTML dan CSS. Saya suka mengulik-ngulik keduanya tanpa framework CSS
-                    sebelum saya mengenal Bootstrap. Dari situ juga, saya mengenal Javascript dan ReactJS. 
-                    Selain itu, saya sangat tertarik dan mempelajari di UI/UX Design.
-                    <br>
-                    <br>
-                    Dari situ, saya jadi memahami proses pembuatan Web dari sisi Design dan Bisnis.
-                    Hal ini sangat membantu saya dalam membuat Web dari sisi Front-End.
-                    Saya telah membuat project sederhana yakni Live Search API menggunakan ReactJS. 
-                    Teman-teman bisa melihatnya di laman bagian Project.
-                    Untuk kedepannya saya akan membuat project-project yang lebih menarik lagi.
-                </h3>
-            </div>
-            <div class="languages">
-                <div class="container flex">
-                    <div class="card">
-                        <img src="img/html.svg" alt="" class="html">
+    <main class="container">
+        <!-- Hero -->
+        <div class="hero" id="home">
+            <div class="container grid">
+                <div class="row">
+                    <div class="me">
+                        <img src="./img/me.jpeg" alt="">
                     </div>
-                    <div class="card" >
-                        <img src="img/css.svg" alt="" class="css">
+                    <h1>Front End Web Developer</h1>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore, ipsam ducimus ut amet, facilis ad culpa quisquam consequatur quam nostrum. Sunt, deleniti suscipit consequatur magni enim ducimus ab maxime!</p>
+                    <br>
+                    <div class="social">
+                        <a href="https://www.instagram.com/_mhhhhh/"><img src="img/instagram.svg" alt="" id="instagram"></a>
+                        <a href="https://github.com/hfz02"><img src="img/github.svg" alt="" id="github"></a>
+                        <a href="https://www.linkedin.com/in/01-muhammad-hafizh"><img src="img/linkedin.svg" alt="" id="linkedin"></a>
                     </div>
-                    <div class="card">
-                        <img src="img/javascript.svg" alt="" class="js">
-                    </div>
-                    <div class="card">
-                        <img src="img/reactjs.svg" alt="" class="reactjs">
-                    </div>
-                    <div class="card">
-                        <img src="img/figma.svg" alt="" class="figma">
+                    <div class="skill">
+                        <span>#HTML</span>
+                        <span>#CSS</span>
+                        <span>#Javascript</span>
+                        <span>#ReactJS</span>
+                        <span>#Bootstrap</span>
+                        <span>#Sass</span>
+                        <span>#Redux</span>
+                        <span>#Figma</span>
+                        <span>#NodeJS</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-
-    <div class="project" id="project">
-        <div class="row">
-            <div class="row-1 text-center">
-                <h2 class="lg">Project</h2>
-            </div>
-            <div class="row-2">
-                <div class="card"></div>
-            </div>
-            <div class="row-3">
-                <button><a rel="noopener noreferrer" target="_blank" href="https://app-cart.herokuapp.com/">Lihat Project</a></button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container grid grid-2">
-            <div>
-                <h1>Muhammad Hafizh</h1>
-                <p>Copyright &copy; 2022</p>
-            </div>
-            <nav>
-                <div class="social">
-                    <a href="https://github.com/hfz02"><img src="img/github.svg" alt="" id="github"></a>
-                    <a href="https://www.linkedin.com/in/01-muhammad-hafizh"><img src="img/linkedin.svg" alt="" id="linkedin"></a>
-                    <a href="https://www.instagram.com/_mhhhhh/"><img src="img/instagram.svg" alt="" id="instagram"></a>
+        
+        <!-- About me -->
+        <div class="about-me" id="about-me">
+            <div class="container grid">
+                <div class="col-1">
+                    <h1>
+                        Explicabo nulla dolorum omnis 
+                        recusandae molestias amet.
+                    </h1>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Dolorem exercitationem facere commodi nihil, animi facilis 
+                        aliquid ea rerum sunt doloribus.
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Vitae optio aliquam sed consectetur pariatur. Tempore qui 
+                        voluptate ut molestias officia, quaerat, beatae amet eaque 
+                        repudiandae omnis commodi libero maiores culpa.
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, 
+                        ratione quod voluptatum deleniti consectetur voluptas ad assumenda 
+                        error veritatis consequatur.
+                    </p>
+                    <br>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda 
+                        quos totam repellat ullam vitae, dolores id animi deserunt? Perferendis, hic!
+                    </p>
                 </div>
-                </ul>
-            </nav>
+                <div class="col-2">
+                    <div>
+                        <img src="./img/me2.jpeg" alt="">
+                        <br>
+                        <br>
+                        <p><a href="https://www.instagram.com/_mhhhhh/"><img src="img/instagram.svg" alt="" id="instagram"></a> Follow on Instagram</p>
+                        <p><a href="https://github.com/hfz02"><img src="img/github.svg" alt="" id="github"></a> Follow on Github</p>
+                        <p><a href="https://www.linkedin.com/in/01-muhammad-hafizh"><img src="img/linkedin.svg" alt="" id="linkedin"></a> Follow on Linkedin</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        
+        <!-- Projects -->
+        <div class="project" id="project">
+            <div class="container row">
+                <div class="row-1">
+                    <h1>
+                        Exercitationem voluptatibus, consequuntur aliquid.
+                    </h1>
+                    <br>
+                    <p>
+                        Voluptatem sunt itaque nulla qui nobis quis sed error recusandae consequatur vitae repudiandae est. Expedita perferendis earum aperiam 
+                        veniam eaque numquam recusandae rerum optio voluptates ipsam dolore quia repellendus ullam facere accusantium.
+                    </p>
+                </div>
+                <div class="row-2">
+                    <div class="card">
+                        <h5>Ecommerce</h5>
+                        <p>Qui mollitia distinctio nam placeat.</p>
+                        <a href="https://app-cart.herokuapp.com/">See Project</a>
+                    </div>
+                    <div class="card">
+                        <h5>Project</h5>
+                        <p>Eum vel fugit, exercitationem obcaecati delectus nulla.</p>
+                        <a href="#">See Project</a>
+                        <!-- landing.html -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container grid grid-2">
+                <nav>
+                    <div class="social">
+                        <a href="#home">Home</a>
+                        <a href="#about-me">About</a>
+                        <a href="#project">Projects</a>
+                    </div>
+                </nav>
+                <div class="copyright">
+                    <p>&copy; 2022 Muhammad Hafizh. All rights reserved </p>
+                </div>
+            </div>
+        </footer>
+    </main>
 
     <script>
         window.onscroll = () => scrollFunction()
         
         function scrollFunction() {
             if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-            document.getElementById("navbar").style.boxShadow = "0 5px 5px 1px #020"
+            document.getElementById("navbar").style.boxShadow = "rgb(0 153 139) 1px 1px 6px 2px"
             } else {
             document.getElementById("navbar").style.boxShadow = 'none'
             }

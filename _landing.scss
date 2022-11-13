@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+/* Utilities */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    color: white;
+    font-family: sans-serif;
+}
+
+$primary: #006FA3;
+@mixin container {}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+}
+
+
+// First Page
+.first-page {
+    background: $primary;
+    
+    .container {
+        background-color: #fff;
+        display: grid;
+        // grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            'a a c'
+            'b b c'
+        ;
+        
+        .one {
+            grid-area: a;
+            background-color: #28374b;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            
+            h1 {
+                font-size: 6rem;
+                width: 20px;
+            }
+        }
+    
+        .two {
+            grid-area: b;
+            background-color: #aaa;
+            height: 25vh;
+            // width: 120vh;
+            // align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .three {
+            grid-area: c;
+            display: flex;
+            justify-self: end;
+            background-color: #ccc;
+            width: 100px;
+
+            div {
+                // justify-self: end;
+                // align-self: end;
+                justify-content: center;
+            }
+
+            ul {
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 300px;
+    }
+}
+
+// Second Page
+.second-page {
+    background: #28374b;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+// Third Page
+.third-page {
+    background: green;
+    height: 110vh;
+}
+
+// Fourth Page
+.fourth-page {
+    background: red;
+}
+
+// Navigation
+nav {
+    position: absolute;
+    bottom: 0;
+    // background: #214556;
+    background: #006FA3;
+    height: 10vh;
+    padding: 20px 0;
+    margin-bottom: 3%;
+    z-index: 100;
+    width: 100%;
+    color: #000;
+
+    .menu, .icon {
+        margin: 40% 0;
+    }
+
+    span {
+        font-size: 30px;
+        margin-left: 5%;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+
+/* Tablets and under */
+
+// @media(max-width: 768px) {}
+
+/* Mobile */
+// (max-width: 700px)
+@media all and (max-width: 600px) {
+    nav {
+        .container {
+            text-align: center;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    }
+}
+
+// @media only screen and (max-width: 843px) {}
