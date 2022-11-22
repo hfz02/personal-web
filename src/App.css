@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  height: 12vh;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10vh;
+  color: #fff;
+}
+
+nav span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .3s all ease;
+}
+
+nav span:hover {
+  color: #7ED6FF;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10vh;
+  /* background-color: #fff; */
+}
+
+footer span a {
+  color: #fff;
+  transition: .3s all ease;
+}
+
+footer span a:hover {
+  color: #7ED6FF;
+}
+
+/* Home */
+
+#home {
+  background: #1A2130;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: 70vh;
+  width: 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(67, 67, 67); */
+}
+
+.home-left {
+  height: 20vh;
+  width: 50vh;
+  color: #fff;
+  text-align: start;
+  line-height: 10vh;
+  /* background-color: rgb(0, 255, 242); */
+}
+
+.home-left h1 {
+  font-size: 5rem;
+  color: #7ED6FF;
+}
+
+.home-left h4 {
+  font-size: 1.3rem;
+}
+
+.home-right {
+  height: 20vh;
+  width: 50vh;
+  text-align: end;
+  /* background-color: green; */
+}
+
+.home-right h1 {
+  position: relative;
+  font-size: 3rem;
+  line-height: 10.5vh;
+  transition: .1s all ease-in-out;
+  cursor: pointer;
+  margin-bottom: 2vh;
+}
+
+.home-right .one::after {
+  position: absolute;
+  content: '';
+  left: 65%;
+  bottom: 0;
+  border-bottom: 4px solid #fff;
+  border-radius: 20px;
+  width: 17vh;
+  transition: .1s all ease-in-out;
+  /* display: none; */
+}
+
+.home-right .two::after {
+  position: absolute;
+  content: '';
+  left: 53%;
+  bottom: 0;
+  border-bottom: 4px solid #fff;
+  border-radius: 20px;
+  width: 23vh;
+  transition: .1s all ease-in-out;
+  /* display: none; */
+}
+
+.home-right h1:hover {
+  transform: translateX(10%);
+  color: #7ED6FF;
+}
+
+.home-right .one:hover::after {
+  display: block;
+  transform: translateX(-50%);
+  border-bottom: 4px solid #7ED6FF;
+}
+
+.home-right .two:hover::after {
+  display: block;
+  transform: translateX(-40%);
+  border-bottom: 4px solid #7ED6FF;
+}
+
+/* About */
+
+#about {
+  background: #1A2130;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about-left {
+  height: 50vh;
+  width: 50vh;
+  color: #fff;
+  text-align: start;
+  line-height: 10vh;
+  overflow: hidden;
+}
+
+img {
+  transform: translate(-20%, -20%);
+  /* background-color: #fff; */
+}
+
+.about-right {
+  height: 20vh;
+  width: 50vh;
+  text-align: start;
+}
+
+/* Projects */
+
+#projects {
+  background: #1A2130;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects section {
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(46, 57, 58);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  width: 40vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 2vh;
+  padding: 3vh;
+  transition: .3s all ease;
+}
+
+.card:hover {
+  background-color: rgb(32, 42, 42);
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s all ease;
+}
+
+.card a:hover {
+  color: #7ED6FF;
+}
+
+@media all and (max-width: 1145px) {
+  /* Home */
+  #home section {
+    flex-direction: column;
+    /* background-color: #fff; */
+  }
+  
+  /* About */
+  #about section {
+    flex-direction: column;
+    height: 100%;
+    background-color: yellow;
+  }
+
+  .about-left {
+    /* margin: 0vh 0; */
+    background-color: green;
+  }
+
+  .about-right {
+    /* margin: 10vh 0; */
+    background-color: aqua;
+  }
+
+}
+
+
+/* @media all and (max-width: 768px) { 
+}*/
