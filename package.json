@@ -18,6 +18,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy" : "gh-pages -d build",
+    "compile:sass": "sass ./src/sass/main.scss ./src/css/main.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
